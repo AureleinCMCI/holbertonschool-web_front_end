@@ -13,21 +13,28 @@ body {
 
 }
 
-a[href]{
+a{
 	color: #161616;
-    text-decoration: none;
+  text-decoration: none;
 }
 
-a[href]:visited {
-    font-style: italic;
+a:link {
+  color: var(--text-color);
+  text-decoration: none;
 }
 
-a[href]:hover {
-    text-decoration: underline;
+a:visited {
+  font-style: italic;
 }
-a[href]:active {
-    background-color: var(--color-light-grey);
+
+a:hover {
+  text-decoration: underline;
 }
+
+a:active {
+  background-color: var(--color-light-grey);
+}
+
 .visually-hidden{
 	display: none;
 }
@@ -37,17 +44,22 @@ a[href]:active {
 }
 
 .section-header{
-    text-align: var(--section-header-align);
-  }
-.section-title{
-    font-family: var(--font-family-title);
-    font-size: var(--font-size-xx-large);
-    font-weight: var(--font-weight-bold);
-    margin: var(--section-title-margin);
-    color: var(--section-title-color);
+  text-align: var(--section-header-align);
 }
+
+.section-title{
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-xx-large);
+  font-weight: var(--font-weight-bold);
+  margin: var(--section-title-margin);
+  color: var(--section-title-color);
+}
+
 .section-tagline{
 	color: var(--color-primary);
+  font-family: var(--font-family-title);
+  text-transform: var(--section-tagline-transform);
+  font-weight: var(--font-weight-bold);
 }
 
 h1 h2 h3 h4 h5 h6{
@@ -74,7 +86,8 @@ h1 h2 h3 h4 h5 h6{
   --line-height-small: 1.2;
   --line-height-base: 1.5;
   --line-height-big: 1.8;
-  --section-header-align:center;
-  --section-title-margin:0;
+  --section-header-align: center;
+  --section-tagline-transform: uppercase;
+  --section-title-margin: 0;
   --section-title-color: var(--color-black);
 }
