@@ -1,34 +1,20 @@
-/* Define custom properties on the root element */
-:root {
-    --color-primary: #d73953;
-    --color-black: #090909;
-    --color-white: #ffffff;
-    --color-light-grey: #f3f3f3;
-    --color-dark-grey: #353535;
-    --text-color: var(--color-black);
-  }
-  
-  /* Ensure smooth scrolling */
-  html {
+
+html {
     scroll-behavior: smooth;
   }
   
-  /* Revisit body and anchor declarations to use text-color */
   body {
     color: var(--text-color);
   }
   
   a {
     color: var(--text-color);
-    text-decoration: none; /* Optional: Ensure clean link styling */
   }
   
-  /* Visually hidden elements remain hidden */
   .visually-hidden {
     display: none;
   }
   
-  /* Revisit section-tagline and card-category declarations */
   .card-category {
     color: var(--color-primary);
   }
@@ -37,3 +23,11 @@
     color: var(--color-primary);
   }
   
+  :root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+  }
